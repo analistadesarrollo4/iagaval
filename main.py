@@ -1,10 +1,7 @@
 import os
-from dotenv import load_dotenv
 from openai import AzureOpenAI
 import time
 import streamlit as st
-
-load_dotenv()
 
 openai_model = "gpt-4o-mini"
 
@@ -54,8 +51,8 @@ Las historias de usuario proporcionadas deben cumplir con la estructura indicada
 - No incluyas información que no sea relevante para la creación de historias de usuario."""
 
 client = AzureOpenAI(
-    azure_endpoint=os.getenv('OPENAI_URL', "https://default.endpoint.com"),
-    api_key=os.getenv("OPENAI_API_KEY"),
+    azure_endpoint=st.secrets["OPENAI_URL"],
+    api_key=st.secrets["OPENAI_API_KEY"],
     api_version="2024-05-01-preview"
 )
 
