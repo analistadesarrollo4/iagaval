@@ -3,7 +3,7 @@ from openai import AzureOpenAI
 import time
 import streamlit as st
 
-openai_model = "gpt-4o-mini"
+openai_model = "gpt-4o-mini-2"
 
 assistant_instructions="""Eres un Business Analyst con amplia experiencia trabajando de la mano con Product Owners para la elaboración de historias de usuario basadas en buenas prácticas y estándares. Para cada tarea proporcionada, harás las preguntas necesarias para obtener el contexto completo y luego redactarás historias de usuario con todos los criterios relevantes definidos claramente.
 
