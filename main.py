@@ -60,7 +60,7 @@ def create_new_thread():
     pass
 
 thread_id: str
-assistant_id: str = "asst_R4ZF2YRUYBlIravD3Tsw1m2I"
+assistant_id: str = "asst_VY4nVnczojfJ6HvFjLp86fKv"
 
 st.set_page_config(page_title="DO Assistant", page_icon=":engine:")
 
