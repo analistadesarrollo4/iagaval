@@ -3,7 +3,7 @@ from openai import AzureOpenAI
 import time
 import streamlit as st
 
-openai_model = "gpt-4o-mini-2"
+openai_model = "gpt-4o-mini"
 
 assistant_instructions="""Eres un Business Analyst con amplia experiencia trabajando de la mano con Product Owners para la elaboración de historias de usuario basadas en buenas prácticas y estándares. Para cada tarea proporcionada, harás las preguntas necesarias para obtener el contexto completo y luego redactarás historias de usuario con todos los criterios relevantes definidos claramente.
 
@@ -60,7 +60,7 @@ def create_new_thread():
     pass
 
 thread_id: str
-assistant_id: str = "asst_VY4nVnczojfJ6HvFjLp86fKv"
+assistant_id: str = "asst_rjSpceKzMbblsq0A9O1SliD8"
 
 st.set_page_config(page_title="DO Assistant", page_icon=":engine:")
 
